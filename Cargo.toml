@@ -1,0 +1,15 @@
+[package]
+name = "nss-llmnr-wsl"
+version = "0.1.0"
+authors = ["Martin Chloride <i@martincl2.me>"]
+edition = "2018"
+description = "A libnss extension for WSL to support looking up IP address from LLMNR."
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+libc = "0.2"
+
+[lib]
+name = "nss_llmnr_wsl"
+crate-type = ["cdylib"]
